@@ -1,7 +1,7 @@
 # Blob Kart
 ## Authors
 👤 Owen Cook (Myself)  
-👤 [Aaron Perkel](https://github.com/aaronperkel?tab=overview&from=2023-12-01&to=2023-12-31)
+👤 [Aaron Perkel](https://github.com/aaronperkel)
 ---
 ## Description
 This is a continuation of two of our previous projects that were also inspired by Mario Kart. We created a 2D graphical version of our take on Mario Kart: **Blob Kart**. It was created using concepts we learned by completing other projects from this class.
