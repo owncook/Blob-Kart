@@ -1,21 +1,17 @@
 # Blob Kart
 
-![Blob Kart](titleScreen.gif)
+![Blob Kart](img.gif)
 
-## Authors
-👤 Owen Cook (Myself)  
-👤 [Aaron Perkel](https://github.com/aaronperkel)
+This is a continuation of our [M2OEP](https://github.com/uvmcs2300s2024/M2OEP-aperkel-oacook) and our [M3OEP](https://github.com/uvmcs2300s2024/M3OEP-aperkel-oacook). We created a 2D graphical version of our take on Mario Kart: **CS2300 Kart**. It was created using concepts we learned by completing the M4AP and M4GPs.
 
-## Description
-Blob Kart is a game built in C++ inpsired by Mario Kart. This is a continuation of two of our previous projects that were also inspired by Mario Kart. It was created using concepts we learned by completing other projects from this class.
-
-Graphics source files were provided as started code by our instructor.
+All files were files given to us as starter code for M4AP and M4GP.
 
 We plan to implement a cart selection, as well as more power ups. We would also like to add specific handling for specific characters and vehicles (i.e. more weight = less acceleration = more speed). We also have almost finished code for an item box feature. This would allow the cart to drive over an item box that would give the player a random power up. This code is implemented, just commented out as we did not fully finish the idea.
 
-We plan to implement a cart selection, as well as more power ups. We would also like to add specific handling for specific characters and vehicles (i.e. more weight = less acceleration = more speed). We also have almost finished code for an item box feature. This would allow the cart to drive over an item box that would give the player a random power up. This code is implemented, just commented out as we did not fully finish the idea.
+After completing this project, the grade we think is justified is 100/100. We think this because we implemented lots of graphics concepts into our game. We also tied in ideas from previous modules to add sound to our game.
 
 ### Requirements
+> **Note:** Pygame is only requred to run the game with sound
 1. Pygame
    1. `pip3 install pygame`
 
@@ -28,12 +24,12 @@ We plan to implement a cart selection, as well as more power ups. We would also 
 4. Run `make`
 5. Run `echo "./Blob_Kart & python3 ../play_music.py &" > run.sh`
 6. Run `bash run.sh`
-> **NOTE:** A separate window will open that will play the music
+> **NOTE:** A separate PyGame will open that handles the background music.
 
 ### Instructions
 1. When you run the program, press the `space` key to start the game.
 2. Player 1 select a character
-3. Player 2 select a character 
+3. Player 2 select a character
    1. Note: Both players are able to select the same character
 4. Press the `Play` button
 5. Player 1 (left, red car) use `W` `A` `S` `D`
@@ -42,7 +38,7 @@ We plan to implement a cart selection, as well as more power ups. We would also 
 8. The yellow bar is a boost panel, drive the center of your car over it to gain a boost!
 
 ### Game Logic
-Each cart is a vector of rectangle objects that move together. There are three invisible "checkpoints" spread out across the racetrack. Each cart must hit all three of these checkpoints for a lap to count. This prevents a player from doing small loops around the finish line to cheat the system. The carts move slower when cutting through the grass to prevent players from trying to take their own shortcuts. 
+Each cart is a vector of rectangle objects that move together. There are three invisible "checkpoints" spread out across the racetrack. Each cart must hit all three of these checkpoints for a lap to count. This prevents a player from doing small loops around the finish line to cheat the system. The carts move slower when cutting through the grass to prevent players from trying to take their own shortcuts.
 
 ### Known Bugs
 - If you drive into a wall while holding the opposite direction (hold `D` to drive in to right wall and then start holding down `A`), the top half of the cart "drives away" from the rest of the cart.
