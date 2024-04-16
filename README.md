@@ -1,5 +1,5 @@
 # Blob Kart
-### Authors
+## Authors
 👤 Owen Cook (Myself)  
 👤 [Aaron Perkel](https://github.com/aaronperkel?tab=overview&from=2023-12-01&to=2023-12-31)
 ---
