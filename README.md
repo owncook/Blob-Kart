@@ -1,6 +1,6 @@
 # Blob Kart
 
-![Blob Kart](img.png)
+![Blob Kart](titleScreen.gif)
 
 ## Authors
 👤 Owen Cook (Myself)  
