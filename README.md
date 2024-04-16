@@ -1,8 +1,12 @@
 # Blob Kart
+### Authors
+👤 Owen Cook (Myself)  
+👤 [Aaron Perkel](https://github.com/aaronperkel?tab=overview&from=2023-12-01&to=2023-12-31)
+---
+## Description
+This is a continuation of two of our previous projects that were also inspired by Mario Kart. We created a 2D graphical version of our take on Mario Kart: **Blob Kart**. It was created using concepts we learned by completing other projects from this class.
 
-This is a continuation of our [M2OEP](https://github.com/uvmcs2300s2024/M2OEP-aperkel-oacook) and our [M3OEP](https://github.com/uvmcs2300s2024/M3OEP-aperkel-oacook). We created a 2D graphical version of our take on Mario Kart: **Blob Kart**. It was created using concepts we learned by completing other projects from this class.
-
-All files were files given to us as starter code for M4AP and M4GP.
+Graphics source files were provided as started code by our instructor.
 
 We plan to implement a cart selection, as well as more power ups. We would also like to add specific handling for specific characters and vehicles (i.e. more weight = less acceleration = more speed). We also have almost finished code for an item box feature. This would allow the cart to drive over an item box that would give the player a random power up. This code is implemented, just commented out as we did not fully finish the idea.
 
