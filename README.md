@@ -3,8 +3,8 @@
 ![Blob Kart](img.gif)
 
 ## Authors
-👤 Aaron Perkel (Myself)  
-👤 [Owen Cook](https://github.com/owncook)
+👤 Owen Cook
+👤 [Aaron Perkel](https://github.com/aaronperkel)
 
 ## Description
 Blob Kart is a game built in C++ inpsired by Mario Kart. This is a continuation of two of our previous projects that were also inspired by Mario Kart. It was created using concepts we learned by completing other projects from this class.
