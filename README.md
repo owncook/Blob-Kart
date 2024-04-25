@@ -3,7 +3,7 @@
 ![Blob Kart](img.gif)
 
 ## Authors
-👤 Owen Cook
+👤 Owen Cook  
 👤 [Aaron Perkel](https://github.com/aaronperkel)
 
 ## Description
