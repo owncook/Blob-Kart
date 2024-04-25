@@ -2,13 +2,16 @@
 
 ![Blob Kart](img.gif)
 
-This is a continuation of our [M2OEP](https://github.com/uvmcs2300s2024/M2OEP-aperkel-oacook) and our [M3OEP](https://github.com/uvmcs2300s2024/M3OEP-aperkel-oacook). We created a 2D graphical version of our take on Mario Kart: **CS2300 Kart**. It was created using concepts we learned by completing the M4AP and M4GPs.
+## Authors
+👤 Aaron Perkel (Myself)  
+👤 [Owen Cook](https://github.com/owncook)
 
-All files were files given to us as starter code for M4AP and M4GP.
+## Description
+Blob Kart is a game built in C++ inpsired by Mario Kart. This is a continuation of two of our previous projects that were also inspired by Mario Kart. It was created using concepts we learned by completing other projects from this class.
+
+Graphics source files were provided as started code by our instructor.
 
 We plan to implement a cart selection, as well as more power ups. We would also like to add specific handling for specific characters and vehicles (i.e. more weight = less acceleration = more speed). We also have almost finished code for an item box feature. This would allow the cart to drive over an item box that would give the player a random power up. This code is implemented, just commented out as we did not fully finish the idea.
-
-After completing this project, the grade we think is justified is 100/100. We think this because we implemented lots of graphics concepts into our game. We also tied in ideas from previous modules to add sound to our game.
 
 ### Requirements
 > **Note:** Pygame is only requred to run the game with sound
