@@ -8,9 +8,19 @@ Engine::Engine() : keys() {
     this->initWindow();
     this->initShaders();
     this->initShapes();
+
+    // Load and play background music
+    if (!backgroundMusic.openFromFile("../intro.wav")) {
+      std::cerr << "Error: Could not load music file." << std::endl;
+    } else {
+      backgroundMusic.setLoop(false);  // Loop the music
+      backgroundMusic.play();         // Start playback
+    }
 }
 
-Engine::~Engine() {}
+Engine::~Engine() {
+  backgroundMusic.stop();
+}
 
 unsigned int Engine::initWindow(bool debug) {
     // glfw: initialize and configure
@@ -563,6 +573,19 @@ void Engine::update() {
     deltaTime = currentFrame - lastFrame;
     lastFrame = currentFrame;
 
+    if (!introFinished && backgroundMusic.getStatus() == sf::SoundSource::Stopped) {
+      // Intro music has finished
+      introFinished = true;
+
+      // Load and play loop music
+      if (!backgroundMusic.openFromFile("../loop.wav")) {
+        std::cerr << "Error: Could not load loop music file." << std::endl;
+      } else {
+        backgroundMusic.setLoop(true);  // Loop continuously
+        backgroundMusic.play();         // Start playback
+      }
+    }
+
     if (screen == play) {
         // Red car checkpoint system
         for (int cp_num = 0; cp_num < checkpoints.size(); cp_num++) {
@@ -845,8 +868,8 @@ GLenum Engine::glCheckError_(const char *file, int line) {
             case GL_INVALID_ENUM:                  error = "INVALID_ENUM"; break;
             case GL_INVALID_VALUE:                 error = "INVALID_VALUE"; break;
             case GL_INVALID_OPERATION:             error = "INVALID_OPERATION"; break;
-            case GL_STACK_OVERFLOW:                error = "STACK_OVERFLOW"; break;
-            case GL_STACK_UNDERFLOW:               error = "STACK_UNDERFLOW"; break;
+            // case GL_STACK_OVERFLOW:                error = "STACK_OVERFLOW"; break;
+            // case GL_STACK_UNDERFLOW:               error = "STACK_UNDERFLOW"; break;
             case GL_OUT_OF_MEMORY:                 error = "OUT_OF_MEMORY"; break;
             case GL_INVALID_FRAMEBUFFER_OPERATION: error = "INVALID_FRAMEBUFFER_OPERATION"; break;
         }

@@ -6,6 +6,7 @@
 #include <memory>
 #include <iostream>
 #include <GLFW/glfw3.h>
+#include <SFML/Audio.hpp>
 
 #include "shader/shaderManager.h"
 #include "font/fontRenderer.h"
@@ -22,6 +23,9 @@ class Engine {
 private:
     /// @brief The actual GLFW window.
     GLFWwindow* window{};
+
+    sf::Music backgroundMusic;
+    bool introFinished = false;
 
     /// @brief The width and height of the window.
     const unsigned int width = 1200, height = 800; // Window dimensions
